@@ -5,6 +5,8 @@ namespace Variables
 {
     [CustomPropertyDrawer(typeof(IntReference))]
     [CustomPropertyDrawer(typeof(FloatReference))]
+    [CustomPropertyDrawer(typeof(StringReference))]
+    [CustomPropertyDrawer(typeof(ListReference<>))]
     public class ReferenceDrawer : PropertyDrawer
     {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
